@@ -1,4 +1,4 @@
 index dot medical doctor
 \n^bad joke
 \nhopefully that puts it on a different line
-![Image](Screenshot 2022-04-07 17.23.18.png)
+![Image](https://rhankin214.github.io/cse15l-lab-reports/Screenshot%202022-04-07%2017.23.18.png)

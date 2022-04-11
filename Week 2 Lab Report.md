@@ -31,5 +31,5 @@ Play around in the server with UNIX commands. Here's a list of commands you can 
 - `mkdir <name>` creates a new directory in the current one of the specified name
 - `touch <name>` creates a file of the specified name.
 <br> Here's some sample output of the ls, mkdir, and touch commands:
-![Image](https://rhankin214.github.io/cse15l-lab-reports/unix_commands_examples.png)
+![Image](https://rhankin214.github.io/cse15l-lab-reports/unix_command_examples.png)
 <br> <br>

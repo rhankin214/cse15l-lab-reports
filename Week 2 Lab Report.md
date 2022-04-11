@@ -69,7 +69,7 @@ Here's some screen shots depicting the whole process <br>
 We've cutout the passwords, but running a file on the server still takes multiple commands. We have two techniques we can use to make multiple commands into one. 
 1. We can use ";" to separate two commands, which the computer will run one after the other
 2. We can put "" after the ssh command to specify commands we want to run on the server. Doing this also saves us the trouble of logging out of hit.
-By combinging these techniques, we can make the command: <br> <br>
+By combining these techniques, we can make the command: <br> <br>
 scp filename.java cs15lsp22aaa@ieng6.ucsd.edu:~/; ssh cs15lsp22aaa@ieng6.ucsd.edu "javac filename.java; java filename" <br> <br>
-This command sends the newest copy of a file to the server and runs it there, and each time we want to run it again we just have to press the up arrow and enter, which only takes seconds. Here's a screenshot showing it in action with a file called printerMan that simply announces it works. <br>
+This command sends the newest copy of a file to the server and runs it there, and each time we want to run it again we just have to press the up arrow and enter, which only takes seconds. Here's a screenshot showing it in action with a file called printerMan that simply announces  thatit works. <br>
 ![Image](https://rhankin214.github.io/cse15l-lab-reports/printerManScreenshot.png)

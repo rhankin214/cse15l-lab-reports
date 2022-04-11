@@ -19,6 +19,17 @@ Make note of the text circled in red. That's part of the address of the server y
 Open vs code and click Terminal -> New Terminal then just enter into the terminal
 `ssh cs15lsp22aaa@ieng6.ucsd.edu` but make sure to replace aaa with whatever combination of letters is there on your global password reset page. You'll be prompted for your password. Once you enter it, you should get the following output:
 <br>
-![Image](https://rhankin214.github.io/cse15l-lab-reports/ssh_output_1)
-![Image](https://rhankin214.github.io/cse15l-lab-reports/ssh_output_2)
-You're now connected to the server, and any UNIX commands you run will be run on the server rather than your pc. You can use the `exit` command at any time to log off the server.
+![Image](https://rhankin214.github.io/cse15l-lab-reports/ssh_output_1.png)
+![Image](https://rhankin214.github.io/cse15l-lab-reports/ssh_output_2.png)
+<br>You're now connected to the server, and any UNIX commands you run will be run on the server rather than your pc. You can use the `exit` command at any time to log off the server.
+<br> <br>
+## Step 4: Trying some commands
+Play around in the server with UNIX commands. Here's a list of commands you can try
+- `ls` prints the files and directories in the currnet directory 
+- `ls -a` same as above but prints a wider range of things such as .ssh and .config directories
+- `cd` moves to the listed directory in the current file, or to the parent directory if none is specified.
+- `mkdir <name>` creates a new directory in the current one of the specified name
+- `touch <name>` creates a file of the specified name.
+<br> Here's some sample output of the ls, mkdir, and touch commands:
+![Image](https://rhankin214.github.io/cse15l-lab-reports/unix_commands_examples.png)
+<br> <br>

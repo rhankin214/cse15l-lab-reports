@@ -33,3 +33,31 @@ Play around in the server with UNIX commands. Here's a list of commands you can 
 <br> Here's some sample output of the ls, mkdir, and touch commands:
 ![Image](https://rhankin214.github.io/cse15l-lab-reports/unix_command_examples.png)
 <br> <br>
+## Step 5: Moving files with SCP
+The server's not worth much to us if we can't run our own programs on it. To do that we use `scp` to send files we write on our own computers over to the server.
+The format for an scp command is simply `scp <filename> cs15lsp22aaa@ieng6.ucsd.edu`. Remember to replace 'aaa' with your unique letter combination.
+<br>
+You can also send it to a specific directory in the server by putting `cs15lsp22aaa@ieng6.ucsd.edu:~` and insert the filepath after the '~'
+Here's an example of me using scp to move the example.txt file from my own pc to the server.
+![Image](https://rhankin214.github.io/cse15l-lab-reports/scp_example_1.png)
+<br>As you can see, it's now in the main directory of the server. If it was a java file, I could now compile and run it with the javac and java commands.
+<br> <br>
+## Step 6: Speeding things up with keys
+The way we just did that _worked_, but it was very inefficient. To run a java file on the server that way, we have to
+1. run scp command
+2. enter password
+3. run ssh command
+4. enter password
+5. javac to compile
+6. java to run
+Doing that over and over for an assignment would take a long time, so lets start by cutting out the password step. We can use `ssh-keygen` generate a key that will let the server recognize our computer so we don't have to enter our password every time. 
+<br>
+Here are the steps to setting up and sending an ssh key
+1. run the `ssh-keygen` command. If you're on windows you may need to use `ssh-keygen -t ed25519` instead, although I could just use `ssh-keygen` when I tried it myself just now
+2. You will be prompted for which file to save the key it. If you just press enter without typing it will use the defalut file path in parentheses. In my experience it's easiest just to use the default.
+3. Login to the server using ssh and use the 'mkdir' command to make a directory title .ssh. Then log off.
+4. Then use scp to send your key. If you're not sure where it is, you can scroll up in the terminal to where you entered (or used the default) file path. You can navigate to the correct directory using `cd` or use an scp command that specifies the file path in the format. There will be two keys in the directory, and one of their names will end in .pub. That's the one you want to send. For the scp command add `:~/.ssh/authorized_keys` after the server address to copy the key into the right file.
+5. Enter your password for hopefully the last time. Now running files on the server will be much more efficient.
+Here's some screen shots depicting the whole process <br>
+![Image](https://rhankin214.github.io/cse15l-lab-reports/keygen_example_1.png)
+![Image](https://rhankin214.github.io/cse15l-lab-reports/keygen_example_2.png)

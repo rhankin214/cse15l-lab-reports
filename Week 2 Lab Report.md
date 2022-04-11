@@ -17,5 +17,8 @@ Make note of the text circled in red. That's part of the address of the server y
 <br> <br>
 ## Step 3: connect to a server remotely with SSH
 Open vs code and click Terminal -> New Terminal then just enter into the terminal
-`ssh cs15lsp22aaa@ieng6.ucsd.edu` but make sure to replace aaa with whatever combination of letters is there on your global password reset page.
+`ssh cs15lsp22aaa@ieng6.ucsd.edu` but make sure to replace aaa with whatever combination of letters is there on your global password reset page. You'll be prompted for your password. Once you enter it, you should get the following output:
 <br>
+![Image](https://rhankin214.github.io/cse15l-lab-reports/ssh_output_1)
+![Image](https://rhankin214.github.io/cse15l-lab-reports/ssh_output_2)
+You're now connected to the server, and any UNIX commands you run will be run on the server rather than your pc. You can use the `exit` command at any time to log off the server.

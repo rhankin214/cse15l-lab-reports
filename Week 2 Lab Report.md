@@ -2,7 +2,7 @@
 ## Step 1: Setting up VS code
 ![Image](https://logowik.com/content/uploads/images/visual-studio-code7642.jpg)
 <br>
-Setting up VS code is easy. Just follow [this link] (https://code.visualstudio.com/download) and pick the version for your machine. Once the installer is downloaded,
+Setting up VS code is easy. Just follow [this link](https://code.visualstudio.com/download) and pick the version for your machine. Once the installer is downloaded,
 run it and follow the instructions. <br>
 When you open vs code, you should see this screen:
 ![Image](https://rhankin214.github.io/cse15l-lab-reports/vsc%20mainscreen.png)

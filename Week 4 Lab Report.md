@@ -18,4 +18,6 @@ We can fix this by simply putting an if statement that checks that openParen is 
 ![Image](https://rhankin214.github.io/cse15l-lab-reports/Lab_2_Screenshots/Bracket_without_paren_output.png)
 <br> The bug is that the parser still tries to add a substring even if it gets -1 for the index of the parentheses. The exception is a symptom of that bug. We can fix this by just breaking the loop if any of the indexes return -1, like so:
 ![Image](https://rhankin214.github.io/cse15l-lab-reports/Lab_2_Screenshots/Bracket_without_paren_changes.png)
-<br> This fixes some other failure inducing inputs too, like an infinite loop with [test-file2](https://github.com/rhankin214/markdown-parser/blob/main/test-file2.md) where current index keeps getting set back to zero because the index of closeBracket keeps going to -1. You could consider that another symptom of the same bug.
+<br> This fixes some other failure inducing inputs too, like an infinite loop with [test-file2](https://github.com/rhankin214/markdown-parser/blob/main/test-file2.md) where current index keeps getting set back to zero because the index of closeBracket keeps going to -1. You could consider that another symptom of the same bug.<br>
+Here's a screenshot of that output:<br>
+![Image](https://rhankin214.github.io/cse15l-lab-reports/Lab_2_Screenshots/Bracket_without_paren_output2.png)

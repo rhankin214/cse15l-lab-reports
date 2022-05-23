@@ -1,4 +1,5 @@
-index dot medical doctor
-\n^bad joke
-\nhopefully that puts it on a different line
-![Image](https://rhankin214.github.io/cse15l-lab-reports/Screenshot%202022-04-07%2017.23.18.png)
+## Lab Reports
+[Lab Report 1](https://rhankin214.github.io/cse15l-lab-reports/Week%202%20Lab%20Report.html) <br>
+[Lab Report 2](https://rhankin214.github.io/cse15l-lab-reports/Week%204%20Lab%20Report.html) <br>
+[Lab Report 3](https://rhankin214.github.io/cse15l-lab-reports/lab-report-3-week-6.html) <br>
+[Lab Report 4](https://rhankin214.github.io/cse15l-lab-reports/lab-report-4-week-8.html) <br>
